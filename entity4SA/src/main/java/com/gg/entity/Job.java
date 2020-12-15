@@ -1,6 +1,7 @@
 package com.gg.entity;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Job {
     private Integer id;
@@ -12,8 +13,8 @@ public class Job {
     public String toString() {
         return "Job{" +
                 "id=" + id +
-                ", precPre=" + precPre +
-                ", precNext=" + precNext +
+                ", precPre=" + precPre.stream().map(job -> job.getId()).collect(Collectors.toList()) +
+                ", precNext=" + precNext.stream().map(job -> job.getId()).collect(Collectors.toList()) +
                 ", deadLine=" + deadLine +
                 '}';
     }
