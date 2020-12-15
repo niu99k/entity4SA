@@ -6,6 +6,14 @@ public class Machine {
     private Integer id;
     private Map<Integer, Double> takt;
 
+    @Override
+    public String toString() {
+        return "Machine{" +
+                "id=" + id +
+                ", takt=" + takt +
+                '}';
+    }
+
     public Integer getId() {
         return id;
     }

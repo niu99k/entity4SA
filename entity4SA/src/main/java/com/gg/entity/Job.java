@@ -8,6 +8,16 @@ public class Job {
     private List<Job> precNext;
     private Long deadLine;
 
+    @Override
+    public String toString() {
+        return "Job{" +
+                "id=" + id +
+                ", precPre=" + precPre +
+                ", precNext=" + precNext +
+                ", deadLine=" + deadLine +
+                '}';
+    }
+
     public Integer getId() {
         return id;
     }
