@@ -42,4 +42,12 @@ public class Job {
     public void setPrecNext(List<Job> precNext) {
         this.precNext = precNext;
     }
+
+    public Long getDeadLine() {
+        return deadLine;
+    }
+
+    public void setDeadLine(Long deadLine) {
+        this.deadLine = deadLine;
+    }
 }
